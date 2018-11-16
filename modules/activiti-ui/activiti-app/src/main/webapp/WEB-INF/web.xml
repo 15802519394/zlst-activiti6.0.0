@@ -36,7 +36,7 @@
     <display-name>activiti-app</display-name>
 
     <!-- All the Servlets and Filters are configured by this ServletContextListener : -->
-    <listener>
-        <listener-class>org.activiti.app.servlet.WebConfigurer</listener-class>
-    </listener>
+    <!--<listener>-->
+        <!--<listener-class>org.activiti.app.servlet.WebConfigurer</listener-class>-->
+    <!--</listener>-->
 </web-app>
