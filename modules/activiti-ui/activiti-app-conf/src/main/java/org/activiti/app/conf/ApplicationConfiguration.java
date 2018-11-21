@@ -20,7 +20,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @PropertySources({
-	
+
 	@PropertySource("classpath:activiti-app.properties"),
 	@PropertySource(value = "classpath:activiti-app.properties", ignoreResourceNotFound = true),
 	@PropertySource(value = "file:activiti-app.properties", ignoreResourceNotFound = true),
@@ -29,6 +29,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackages = {
         "org.activiti.app.conf",
         "org.activiti.app.repository",
+		"org.activiti.app.rest",
         "org.activiti.app.service",
         "org.activiti.app.security",
         "org.activiti.app.model.component"})
@@ -36,16 +37,16 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EntityScan({ "org.activiti.app.domain" })
 @EnableTransactionManagement
 public class ApplicationConfiguration {
-	
+
 	/**
 	 * This is needed to make property resolving work on annotations ...
-	 * (see http://stackoverflow.com/questions/11925952/custom-spring-property-source-does-not-resolve-placeholders-in-value) 
-	 * 
+	 * (see http://stackoverflow.com/questions/11925952/custom-spring-property-source-does-not-resolve-placeholders-in-value)
+	 *
 	 * @Scheduled(cron="${someProperty}")
 	 */
 	@Bean
     public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
         return new PropertySourcesPlaceholderConfigurer();
     }
-	
+
 }
