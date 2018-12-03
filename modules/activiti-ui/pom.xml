@@ -22,10 +22,10 @@
 
 		<!-- Libraries versions -->
 		<activiti.version>6.0.0</activiti.version>
-	    <spring.version>4.1.6.RELEASE </spring.version>
+	    <spring.version>4.3.9.RELEASE </spring.version>
 	    <!--<project.version>zlst-activiti6.0.0-springboot1</project.version>-->
-		<spring.security.version>4.0.1.RELEASE</spring.security.version>
-		<hibernate.version>4.3.11.Final</hibernate.version>
+		<spring.security.version>4.2.3.RELEASE</spring.security.version>
+		<hibernate.version>5.0.12.Final</hibernate.version>
 		<jackson.version>2.3.3</jackson.version>
 		<codahale.metrics.version>3.0.2</codahale.metrics.version>
 		<hazelcastcache.version>3.1.5</hazelcastcache.version>
@@ -312,7 +312,7 @@
 		<dependency>
 			<groupId>org.jadira.usertype</groupId>
 			<artifactId>usertype.core</artifactId>
-			<version>3.1.0.CR10</version>
+			<version>5.0.0.GA</version>
 		</dependency>
 
 		<!-- SPRING -->
